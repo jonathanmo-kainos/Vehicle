@@ -6,7 +6,6 @@ public class engine {
     private int capacity;
     private int width;
     private int height;
-    public String brand;
 
     public engine(String fuelType, int capacity, int width, int height)
     {
@@ -16,15 +15,15 @@ public class engine {
         this.height = height;
     }
 
-
     public String viewEngine()
     {
         return this.fuelType + " " + this.capacity + " " + this.width + " " + this.height;
     }
 
-    public String updateEngine(String engine)
+    public void updateEngine()
     {
         Date date = new Date();
-        return viewEngine() + "Engine update for " + ". New engine: " + engine + " on " + date;
+        System.out.println(date);
+
     }
 }
